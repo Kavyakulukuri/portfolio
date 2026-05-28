@@ -728,16 +728,13 @@ function Resume() {
             <h3 style={{ color: "#f1f5f9", fontFamily: "'Rajdhani', sans-serif", fontSize: 24, fontWeight: 700, marginBottom: "0.75rem" }}>Kavyanjali Kulukuri</h3>
             <p style={{ color: "#94a3b8", marginBottom: "0.5rem", fontSize: 14 }}>AI/ML Developer • Full Stack Developer • B.Tech AI &amp; DS</p>
             <p style={{ color: "#64748b", fontSize: 13, marginBottom: "2rem" }}>View my complete academic background, technical skills, projects, certifications, and internship experiences.</p>
-            <button style={{
-              padding: "0.85rem 2.5rem", borderRadius: 12, cursor: "pointer",
-              background: "linear-gradient(135deg, #38bdf8, #818cf8)",
-              border: "none", color: "#050a14",
-              fontFamily: "'Rajdhani', sans-serif", fontSize: 16, fontWeight: 700, letterSpacing: "0.08em",
-              transition: "transform 0.2s, box-shadow 0.2s",
-            }}
-              onMouseEnter={e => { e.target.style.transform = "translateY(-2px)"; e.target.style.boxShadow = "0 12px 40px rgba(56,189,248,0.4)"; }}
-              onMouseLeave={e => { e.target.style.transform = "translateY(0)"; e.target.style.boxShadow = "none"; }}
-            >⬇ Download Resume (PDF)</button>
+           <a href="/resume.pdf" download="Kavyanjali_Resume.pdf" style={{
+  padding: "0.85rem 2.5rem", borderRadius: 12, cursor: "pointer",
+  background: "linear-gradient(135deg, #38bdf8, #818cf8)",
+  border: "none", color: "#050a14", textDecoration: "none",
+  fontFamily: "'Rajdhani', sans-serif", fontSize: 16, fontWeight: 700, letterSpacing: "0.08em",
+  display: "inline-block", transition: "transform 0.2s, box-shadow 0.2s",
+}}>⬇ Download Resume (PDF)</a>
             <p style={{ color: "#475569", fontSize: 12, marginTop: "1rem" }}>PDF format • Updated 2025</p>
           </Glass>
         </Reveal>
