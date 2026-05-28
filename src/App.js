@@ -755,8 +755,15 @@ function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = () => {
-    if (form.name && form.email && form.message) setSent(true);
+  const handleSubmit = async () => {
+    if (form.name && form.email && form.message) {
+      await fetch("https://formspree.io/f/xgoqrjrk", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      setSent(true);
+    }
   };
 
   return (
